@@ -16,8 +16,13 @@ class ArcadeButton {
     void init();
     void SetButtonStatePressed();
     void SetButtonStateHeld();
+    
+    // Getter methods
+    int    GetButtonASCIIKeyCode();
+    string GetButtonDescription();
+    int    GetButtonDigitalPin();
+    int    GetButtonNumber();
     States GetButtonState();
-    int GetButtonNumber();
 
   private:
     States ReadInputPinsPressed();
@@ -27,6 +32,7 @@ class ArcadeButton {
     int _number;
     String _description;
     int _digitalPin;
+    int _asciiKeyCode;
 
     States _buttonState;
 };

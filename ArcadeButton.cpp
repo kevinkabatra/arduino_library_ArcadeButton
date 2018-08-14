@@ -4,10 +4,11 @@
 /*
   Constructor
 */
-ArcadeButton::ArcadeButton(int number, String description, int digitalPin) {
-  _number = number;
+ArcadeButton::ArcadeButton(int number, String description, int digitalPin, int asciiKeyCode) {
+  _asciiKeyCode = asciiKeyCode;
   _description = description;
   _digitalPin = digitalPin;
+  _number = number;
   
   pinMode(_digitalPin, INPUT);
   init();
@@ -17,12 +18,23 @@ void ArcadeButton::init() {
   _buttonState = ArcadeButton::States::UnPressed;
 }
 
+int ArcadeButton::GetButtonASCIIKeyCode() {
+  return _asciiKeyCode;
+}
+
+string ArcadeButton::GetButtonDescription() {
+  return _description;
+}
+
+int ArcadeButton::GetButtonDigitalPin() {
+  return _digitalPin;
+}
+
 int ArcadeButton::GetButtonNumber() {
   return _number;
 }
 
 ArcadeButton::States ArcadeButton::GetButtonState() {
-  
   return _buttonState;
 }
 
