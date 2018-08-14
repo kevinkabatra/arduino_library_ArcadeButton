@@ -1,0 +1,17 @@
+
+#######################################
+# Syntax Coloring Map For ArcadeButton
+#######################################
+
+#######################################
+# Datatypes (KEYWORD1)
+#######################################
+
+ArcadeButton	KEYWORD1
+
+#######################################
+# Methods and Functions (KEYWORD2)
+#######################################
+
+SetButtonState  KEYWORD2
+GetButtonState	KEYWORD2
