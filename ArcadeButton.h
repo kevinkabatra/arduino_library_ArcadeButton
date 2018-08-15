@@ -1,6 +1,7 @@
 /*
-
+  Arduino library that will support physical arcade buttons.
 */
+
 #ifndef ArcadeButton_h
 #define ArcadeButton_h
 
@@ -10,8 +11,9 @@ class ArcadeButton {
   public:
     /* Constructor */
     ArcadeButton(int number, String description, int digitalPin);
+    ArcadeButton(int number, String description, int digitalPin, int asciiKeyCode);
 
-    typedef  enum States { UnPressed, Pressed, Held };
+    enum States { UnPressed, Pressed, Held };
 
     void init();
     void SetButtonStatePressed();
@@ -19,7 +21,7 @@ class ArcadeButton {
     
     // Getter methods
     int    GetButtonASCIIKeyCode();
-    string GetButtonDescription();
+    String GetButtonDescription();
     int    GetButtonDigitalPin();
     int    GetButtonNumber();
     States GetButtonState();

@@ -4,6 +4,15 @@
 /*
   Constructor
 */
+ArcadeButton::ArcadeButton(int number, String description, int digitalPin) {
+  _description = description;
+  _digitalPin = digitalPin;
+  _number = number;
+  
+  pinMode(_digitalPin, INPUT);
+  init();
+}
+
 ArcadeButton::ArcadeButton(int number, String description, int digitalPin, int asciiKeyCode) {
   _asciiKeyCode = asciiKeyCode;
   _description = description;
@@ -22,7 +31,7 @@ int ArcadeButton::GetButtonASCIIKeyCode() {
   return _asciiKeyCode;
 }
 
-string ArcadeButton::GetButtonDescription() {
+String ArcadeButton::GetButtonDescription() {
   return _description;
 }
 
