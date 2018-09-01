@@ -87,7 +87,7 @@ class ArcadeButton {
     ArcadeButton(
       String description,
       byte digitalPin, 
-      byte asciiKeyCode, 
+      byte asciiKeyCode 
     );
 
     /* Extended ASCII Codes have up to 255 key code, so byte covers this range for us */
