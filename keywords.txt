@@ -7,17 +7,17 @@
 # Class (KEYWORD1)
 #######################################
 
-ArcadeButton				KEYWORD1
+ArcadeButton	KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-GetButtonASCIIKeyCode 		KEYWORD2
-GetButtonDescription 		KEYWORD2
-GetButtonDigitalPin 		KEYWORD2
-GetButtonNumber 			KEYWORD2
-GetButtonState 				KEYWORD2
-init 						KEYWORD2
-SetButtonStatePressed  		KEYWORD2
-SetButtonStateHeld			KEYWORD2
+GetASCIIKeyCode	KEYWORD2
+SetASCIIKeyCode KEYWORD2
+
+GetDescription	KEYWORD2
+SetDescription	KEYWORD2
+
+GetDigitalPin	KEYWORD2
+SetDigitalPin	KEYWORD2
