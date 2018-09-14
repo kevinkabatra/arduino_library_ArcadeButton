@@ -14,7 +14,7 @@ ArcadeButton	KEYWORD1
 #######################################
 
 GetASCIIKeyCode	KEYWORD2
-SetASCIIKeyCode KEYWORD2
+SetASCIIKeyCode	KEYWORD2
 
 GetDescription	KEYWORD2
 SetDescription	KEYWORD2
